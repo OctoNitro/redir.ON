@@ -10,7 +10,7 @@ Redirection
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
 var url = getParameterByName('ONURI'); 
-
+var redirs = getParameterByName('URI');
 if (url == "Editor")
   {
     window.location.href = "https://octonitro.github.io/OctoEditor/"
@@ -19,4 +19,13 @@ else if (url == "photoshop")
 {
       window.location.href = "https://octonitro.github.io/photoshop/"
 }
+
+  if (redirs == null)
+  {
+    
+  }
+  else
+  {
+          window.location.href = redirs
+  }
   </script>
